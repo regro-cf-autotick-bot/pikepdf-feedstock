@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pikepdf
-  version: "10.5.1"
+  version: "10.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: ffa6c7d0b77deb3af9735e0b0cae177c897431e10d342bb171b62e5527a622b7
+  sha256: 172611c32ab0a6097cfbccb397847b8e84d3f7bc7d32d5fc2f50e7e61f164725
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,9 +22,9 @@ requirements:
     - ${{ compiler("c") }}
     - ${{ compiler("cxx") }}
     - if: build_platform != target_platform
-      then: python
-    - if: build_platform != target_platform
-      then: cross-python_${{ target_platform }}
+      then:
+        - python
+        - cross-python_${{ target_platform }}
   host:
     - python
     - pip
