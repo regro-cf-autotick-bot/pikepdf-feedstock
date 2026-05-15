@@ -21,6 +21,7 @@ requirements:
     - ${{ stdlib("c") }}
     - ${{ compiler("c") }}
     - ${{ compiler("cxx") }}
+    - cmake
     - if: build_platform != target_platform
       then:
         - python
