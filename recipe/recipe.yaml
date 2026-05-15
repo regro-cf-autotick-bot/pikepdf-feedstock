@@ -28,10 +28,8 @@ requirements:
   host:
     - python
     - pip
-    - setuptools >=77.0.3
-    - wheel >=0.37
-    - pybind11 >=3
-    - qpdf >=11.9.0
+    - scikit-build-core >=0.10
+    - nanobind >=2.0
   run:
     - python
     - pillow >=10.0.1
