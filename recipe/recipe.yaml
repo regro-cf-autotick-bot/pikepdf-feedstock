@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/pikepdf/pikepdf/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 6e1a7d0d1f624b4d681667b5b58641411464f17f7db275d3293466baf922c292
+  sha256: 6837974db5236985d3f6d8b2878112782082eebe1b19f6d59f2ca5a18ea6a021
 
 build:
   number: 0
