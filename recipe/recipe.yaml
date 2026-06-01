@@ -9,8 +9,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 172611c32ab0a6097cfbccb397847b8e84d3f7bc7d32d5fc2f50e7e61f164725
+  url: https://github.com/pikepdf/pikepdf/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 6e1a7d0d1f624b4d681667b5b58641411464f17f7db275d3293466baf922c292
 
 build:
   number: 0
